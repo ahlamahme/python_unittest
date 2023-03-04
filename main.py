@@ -7,6 +7,11 @@ import test_cases
 class TestStringMethod (unittest.TestCase):
     def test_care_speed_low(self):
         self.assertEqual('Low', test_cases.car_speed(30))
+    def test_care_speed_normal(self):
+        self.assertEqual('Normal', test_cases.car_speed(100))
+
+    def test_care_speed_normal(self):
+        self.assertEqual('Invalid', test_cases.car_speed(230))
 
 
 mysuit = unittest.TestSuite()
