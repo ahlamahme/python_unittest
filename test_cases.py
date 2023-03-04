@@ -24,7 +24,7 @@ def student_score(score):
         return 'Passed'
     elif score >= 75 and score < 85:
         return 'Good'
-    elif speed >= 85 and speed < 100:
+    elif score >= 85 and score < 100:
         return 'Excellent'
     else:
         return 'Invalid'
