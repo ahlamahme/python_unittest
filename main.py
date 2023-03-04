@@ -13,7 +13,6 @@ class TestStringMethod (unittest.TestCase):
     def test_care_speed_normal(self):
         self.assertEqual('Invalid', test_cases.car_speed(230))
 
-
 mysuit = unittest.TestSuite()
 mysuit.addTest(TestStringMethod())
 
