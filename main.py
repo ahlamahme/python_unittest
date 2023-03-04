@@ -4,7 +4,7 @@
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 import unittest
 import test_cases
-class TestStringMethod (unittest.TestCase):
+class TestSpeed (unittest.TestCase):
     def test_care_speed_low(self):
         self.assertEqual('Low', test_cases.car_speed(30))
     def test_care_speed_normal(self):
@@ -14,7 +14,7 @@ class TestStringMethod (unittest.TestCase):
         self.assertEqual('Invalid', test_cases.car_speed(230))
 
 mysuit = unittest.TestSuite()
-mysuit.addTest(TestStringMethod())
+mysuit.addTest(TestSpeed())
 #-------------------------------------------------------student score-------
 class TestScore (unittest.TestCase):
     def test_care_speed_failed(self):
@@ -26,7 +26,7 @@ class TestScore (unittest.TestCase):
 
 
 mysuitscore = unittest.TestSuite()
-mysuitscore.addTest(TestStringMethod())
+mysuitscore.addTest(TestScore())
 #---------------------------------------------------------------------------
 
 if __name__ == '__main__':
