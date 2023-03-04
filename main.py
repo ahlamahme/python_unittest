@@ -15,8 +15,22 @@ class TestStringMethod (unittest.TestCase):
 
 mysuit = unittest.TestSuite()
 mysuit.addTest(TestStringMethod())
+#-------------------------------------------------------student score-------
+class TestScore (unittest.TestCase):
+    def test_care_speed_failed(self):
+        self.assertEqual('Failed', test_cases.student_score(30))
+    def test_care_speed_Passed(self):
+        self.assertEqual('Passed', test_cases.student_score(60))
+    def test_care_speed_failed(self):
+        self.assertEqual('Good', test_cases.student_score(75))
+
+
+mysuitscore = unittest.TestSuite()
+mysuitscore.addTest(TestStringMethod())
+#---------------------------------------------------------------------------
 
 if __name__ == '__main__':
     runner = unittest.TextTestRunner()
     runner.run(mysuit)
+    runner.run(mysuitscore)
 

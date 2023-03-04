@@ -14,5 +14,19 @@ def car_speed (speed):
             return 'V.High'
          else :
             return 'Invalid'
+#---------------------------------student score--------
+def student_score(score):
+    if score < 0:
+        return 'Invalid'
+    elif score >= 0 and score < 50:
+        return 'Failed'
+    elif score >= 50 and score < 65:
+        return 'Passed'
+    elif score >= 75 and score < 85:
+        return 'Good'
+    elif speed >= 85 and speed < 100:
+        return 'Excellent'
+    else:
+        return 'Invalid'
 
 
